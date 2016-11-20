@@ -1,4 +1,4 @@
-package src.mtOlympus;
+package szhou2.MtOlympus;
 
 /**
  * Created by billyzs on 11/16/16.

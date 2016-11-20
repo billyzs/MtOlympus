@@ -1,4 +1,4 @@
-package src.mtOlympus;
+package szhou2.MtOlympus;
 
 import ks.common.games.Solitaire;
 import ks.common.view.Widget;

@@ -1,5 +1,5 @@
-package src.mtOlympus;
-
+package szhou2.MtOlympus;
+import ks.tests.*;
 import ks.client.gamefactory.GameWindow;
 import ks.common.model.Card;
 import ks.launcher.Main;

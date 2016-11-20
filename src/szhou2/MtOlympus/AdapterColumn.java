@@ -1,4 +1,4 @@
-package src.mtOlympus;
+package szhou2.MtOlympus;
 
 
 import ks.common.games.Solitaire;
@@ -49,7 +49,7 @@ public class AdapterColumn extends AdapterStack{
         super.mousePressed(me);
         /*Container c = game.getContainer();
 
-        //TODO delete this block after extending AdapterStack
+        //TODO delete this block after extending szhou2.MtOlympus.AdapterStack
         {
             // First get the container
             // Container c = game.getContainer();

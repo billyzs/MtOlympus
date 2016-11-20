@@ -1,4 +1,4 @@
-package src.mtOlympus;
+package szhou2.MtOlympus;
 
 import ks.common.controller.SolitaireReleasedAdapter;
 import ks.common.games.Solitaire;

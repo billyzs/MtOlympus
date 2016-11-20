@@ -1,10 +1,10 @@
-package src.mtOlympus;
-
-import java.awt.event.MouseEvent;
+package ks.tests;
 
 import junit.framework.TestCase;
 import ks.common.games.Solitaire;
 import ks.common.view.Widget;
+
+import java.awt.event.MouseEvent;
 
 /**
  * Defines useful helper methods for testing KombatSolitaire plugins.

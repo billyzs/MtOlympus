@@ -1,9 +1,9 @@
-package src.mtOlympus;
+package szhou2.MtOlympus;
+
 import ks.common.games.Solitaire;
 import ks.common.model.Stack;
 import ks.common.view.Container;
 import ks.common.view.Widget;
-
 import java.awt.event.MouseEvent;
 
 /**
@@ -33,12 +33,12 @@ public abstract class AdapterStack extends java.awt.event.MouseAdapter{
         Stack currentStack = (Stack) currentView.getModelElement();
         // return if no cards to be chosen
         if (currentStack.empty()){
-            System.out.println("AdapterStack::mousePressed: selected an empty column");
+            System.out.println("szhou2.MtOlympus.AdapterStack::mousePressed: selected an empty column");
             return;
         }
         // Widget w = c.getActiveDraggingObject();
         if (w != Container.getNothingBeingDragged()){
-            System.err.println("AdapterStack::mousePressed(): Unexpectedly encountered a Dragging object during mouse press");
+            System.err.println("szhou2.MtOlympus.AdapterStack::mousePressed(): Unexpectedly encountered a Dragging object during mouse press");
             return;
         }
     }
@@ -53,7 +53,7 @@ public abstract class AdapterStack extends java.awt.event.MouseAdapter{
         // return if there's no cards being dragged
         // Widget w = c.getActiveDraggingObject();
         if (w == Container.getNothingBeingDragged()){
-            System.err.println("AdapterStack::mouseReleased: Nothing being dragged atm");
+            System.err.println("szhou2.MtOlympus.AdapterStack::mouseReleased: Nothing being dragged atm");
             c.releaseDraggingObject(); //need to to this otherwise we lose card
             return;
         }
@@ -71,7 +71,7 @@ public abstract class AdapterStack extends java.awt.event.MouseAdapter{
             c.repaint();
         }
         else{ // shouldn't really happen
-            System.err.printf("AdapterStack::mouseReleased: Neither performed the move nor put the dragged obj back");
+            System.err.printf("szhou2.MtOlympus.AdapterStack::mouseReleased: Neither performed the move nor put the dragged obj back");
             // c.releaseDraggingObject();
             c.repaint();
         }
