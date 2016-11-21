@@ -80,6 +80,9 @@ public class MoveStackToStack extends ks.common.model.Move {
         for(int n=0; n<count; n++){
             src.add(tgt.get());
         }
+        if(tgt instanceof Pile){
+            game.updateScore(-count);
+        }
         return true;
     }
 }
