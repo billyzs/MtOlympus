@@ -19,11 +19,12 @@ public class MoveStackToStack extends ks.common.model.Move {
     boolean mDeckUsed = false;
 
     // constructor
-    public MoveStackToStack(Stack s, Stack t, Stack sel){
+    public MoveStackToStack(Stack s, Stack t, Stack sel) {
         src = s;
         tgt = t;
         selected = sel;
         count = sel.count();
+
     }
 
     public Stack getSrc() {

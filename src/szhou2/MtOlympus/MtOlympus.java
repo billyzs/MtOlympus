@@ -144,6 +144,12 @@ public class MtOlympus extends Solitaire{
         // this.updateScore(+16); // dealt 16 cards to foundation
         // this.updateNumberCardsLeft(maxPoints - numPile); // 88
     }
+
+    @Override
+    public Dimension getPreferredSize() {
+        return new Dimension(1200, 800);
+    }
+
     private void initializeView(){
 
         CardImages ci = getCardImages();

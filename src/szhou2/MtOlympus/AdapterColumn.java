@@ -99,37 +99,5 @@ public class AdapterColumn extends AdapterStack{
     @Override
     public void mouseReleased(MouseEvent mouseEvent) {
         super.mouseReleased(mouseEvent);
-/*
-        Container c = game.getContainer();
-        Widget w = c.getActiveDraggingObject();
-        *//*Container c = game.getContainer();
-
-        // return if there's no card being dragged
-        Widget w = c.getActiveDraggingObject();
-        if (w == Container.getNothingBeingDragged()){
-            System.err.printf("AdapterColumn::mouseReleased: Nothing being dragged atm");
-            c.releaseDraggingObject();
-            return;
-        }*//*
-        // handle release
-        Stack src = (Stack) c.getDragSource().getModelElement();
-        Stack sel = (Stack) w.getModelElement();
-        Stack tgt = ((MtOlympus) game).canAddTo(sel, (Stack) currentView.getModelElement()) ?
-                (Stack) currentView.getModelElement()
-                : src;
-
-        MoveStackToStack move = new MoveStackToStack(src, tgt, sel);
-        if(move.doMove(game)){
-            // upon successful completion, update the widgets that changed
-            game.pushMove(move);
-            game.refreshWidgets();
-            c.releaseDraggingObject();
-            c.repaint();
-        }
-        else{ // shouldn't really happen
-            System.err.printf("AdapterColumn::mouseReleased: Neither performed the move nor put the dragged obj back");
-            c.releaseDraggingObject();
-            c.repaint();
-        }*/
     }
 }
